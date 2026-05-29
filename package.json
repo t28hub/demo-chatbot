@@ -11,10 +11,14 @@
     "url": "git+https://github.com/t28hub/demo-chatbot.git"
   },
   "scripts": {
+    "prepare": "lefthook install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@commitlint/cli": "21.0.1",
+    "@commitlint/config-conventional": "21.0.1",
     "@types/node": "catalog:",
+    "lefthook": "2.1.8",
     "typescript": "catalog:"
   },
   "engines": {
