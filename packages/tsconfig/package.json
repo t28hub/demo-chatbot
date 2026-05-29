@@ -1,0 +1,25 @@
+{
+  "name": "@demo-chatbot/tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Shared TypeScript config presets for the demo chatbot monorepo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t28hub/demo-chatbot.git",
+    "directory": "packages/tsconfig"
+  },
+  "files": [
+    "base.json",
+    "next.json",
+    "react.json"
+  ],
+  "exports": {
+    "./base": "./base.json",
+    "./next": "./next.json",
+    "./react": "./react.json"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "2.0.8"
+  }
+}
