@@ -3,7 +3,7 @@ import { Button } from '@demo-chatbot/ui/components/ui/button';
 export default function HomePage() {
   return (
     <main className='flex min-h-screen flex-col items-center justify-center gap-6 p-8'>
-      <h1 className='text-3xl font-bold'>demo chatbot</h1>
+      <h1 className='font-bold text-3xl'>demo chatbot</h1>
       <p className='text-muted-foreground'>Welcome to the demo chatbot app.</p>
       <div className='flex flex-wrap items-center gap-3'>
         <Button>Default</Button>
