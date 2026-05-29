@@ -18,6 +18,7 @@ export function Header() {
         variant='ghost'
         size='icon-sm'
         className='ml-auto'
+        nativeButton={false}
         render={
           // biome-ignore lint/a11y/useAnchorContent: icon child is merged into the rendered <a> by Base UI's render prop
           <a
