@@ -1,0 +1,72 @@
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+
+# Testing
+coverage/
+.vitest-attachments/
+__screenshots__/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+.pnpm-debug.log*
+
+# Build Outputs
+.next/
+build/
+dist/
+out/
+
+# .env files
+.env
+.env.local
+.env.*
+!.env.example
+
+# Turbo
+.turbo/
+
+# AI SDK DevTools capture
+.devtools/
+
+# Vercel
+.vercel/
+
+# Rust/Cargo
+debug/
+target/
+**/*.rs.bk
+*.pdb
+rustc-ice-*.txt
+
+# wasm-pack
+wasm-pack.log
+pkg/
+
+# IntelliJ
+.idea
+.idea_modules
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+
+# Misc
+*.local
+.DS_Store
+*.pem
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
