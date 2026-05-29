@@ -16,18 +16,20 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@base-ui/react": "catalog:",
     "@demo-chatbot/ui": "workspace:*",
     "next": "16.2.6",
-    "react": "19.2.6",
-    "react-dom": "19.2.6",
+    "react": "catalog:",
+    "react-dom": "catalog:",
     "tailwindcss": "catalog:"
   },
   "devDependencies": {
     "@demo-chatbot/tsconfig": "workspace:*",
     "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",
-    "@types/react": "19.2.15",
-    "@types/react-dom": "19.2.3",
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "shadcn": "4.8.0",
     "typescript": "catalog:"
   }
 }

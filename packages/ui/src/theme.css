@@ -1,8 +1,0 @@
-/**
- * Design tokens for @demo-chatbot/ui.
- *  Consumers import this file alongside `@import "tailwindcss";`.
- */
-
-@theme {
-  /* Add color, spacing, font, and other design tokens here. */
-}

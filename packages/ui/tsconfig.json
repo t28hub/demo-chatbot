@@ -1,5 +1,11 @@
 {
   "extends": "@demo-chatbot/tsconfig/react",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@demo-chatbot/ui/*": ["../../packages/ui/src/*"]
+    }
+  },
   "include": ["src/**/*.ts", "src/**/*.tsx"],
   "exclude": ["node_modules", "dist"]
 }
