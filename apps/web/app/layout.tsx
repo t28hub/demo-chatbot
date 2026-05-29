@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
+import './index.css';
+
 export const metadata: Metadata = {
   title: 'demo chatbot',
   description: 'Demo chatbot application',

@@ -16,12 +16,15 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@demo-chatbot/ui": "workspace:*",
     "next": "16.2.6",
     "react": "19.2.6",
-    "react-dom": "19.2.6"
+    "react-dom": "19.2.6",
+    "tailwindcss": "catalog:"
   },
   "devDependencies": {
     "@demo-chatbot/tsconfig": "workspace:*",
+    "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "19.2.15",
     "@types/react-dom": "19.2.3",
