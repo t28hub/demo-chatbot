@@ -7,7 +7,7 @@ export function Header() {
   return (
     <header className='sticky top-0 z-50 flex h-14 items-center gap-2 border-b bg-background px-3'>
       <Button type='button' variant='ghost' size='icon-sm' aria-label='Toggle sidebar'>
-        <PanelLeft className='stroke-1' />
+        <PanelLeft className='stroke-2' />
       </Button>
 
       <Link href='/' className='flex items-center gap-2 font-semibold text-foreground' aria-label='Demo Chatbot Home'>
