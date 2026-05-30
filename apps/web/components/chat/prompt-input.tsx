@@ -115,7 +115,7 @@ function PromptInput({
           rows={1}
           disabled={disabled}
           value={input}
-          className='max-h-48 min-h-24 text-sm leading-relaxed text'
+          className='text max-h-48 min-h-24 text-sm leading-relaxed'
           onKeyDown={handleKeyDown}
           onChange={(event) => {
             setInput(event.target.value);
