@@ -105,7 +105,7 @@ function PromptInput({
       }}
       {...formProps}
     >
-      <InputGroup className='rounded-xl border-border/30 bg-card/70 drop-shadow-md transition-shadow duration-300 focus-within:drop-shadow-2xl dark:bg-card/70'>
+      <InputGroup className='rounded-xl border-border bg-card/70 drop-shadow-md transition-shadow duration-300 focus-within:drop-shadow-2xl dark:bg-card/70'>
         <InputGroupTextarea
           ref={textAreaRef}
           name='message'

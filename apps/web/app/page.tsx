@@ -46,33 +46,41 @@ export default function HomePage() {
   };
 
   return (
-    <main className='mx-auto flex w-full max-w-2xl flex-1 flex-col gap-4 px-4 pb-4'>
-      <div className='flex flex-1 flex-col justify-end gap-3 overflow-y-auto py-4'>
-        {messages.length === 0 ? (
-          <p className='text-center text-muted-foreground text-sm'>Ask anything to start the conversation.</p>
-        ) : (
-          messages.map((message) => (
-            <div
-              key={message.id}
-              className={cn(
-                'max-w-[80%] rounded-2xl px-4 py-2 text-sm',
-                message.role === 'user'
-                  ? 'self-end bg-primary text-primary-foreground'
-                  : 'self-start bg-muted text-foreground',
-              )}
-            >
-              {message.text}
-            </div>
-          ))
-        )}
-      </div>
+    <main className='flex flex-1 min-h-0 flex-col pt-6'>
+      <div className='relative flex w-full flex-1 min-h-0 flex-col overflow-hidden bg-background'>
+        <div className='flex flex-1 min-h-0 flex-col overflow-y-auto'>
+          <div className='mx-auto flex w-full max-w-3xl flex-col gap-4 px-2 py-4'>
+            {messages.length === 0 ? (
+              <p className='text-center text-muted-foreground text-sm'>Ask anything to start the conversation.</p>
+            ) : (
+              messages.map((message) => (
+                <div
+                  key={message.id}
+                  className={cn(
+                    'max-w-[80%] rounded-2xl px-4 py-2 text-sm',
+                    message.role === 'user'
+                      ? 'self-end bg-primary text-primary-foreground'
+                      : 'self-start bg-muted text-foreground',
+                  )}
+                >
+                  {message.text}
+                </div>
+              ))
+            )}
+          </div>
+        </div>
 
-      <PromptInput
-        status={status}
-        onSend={handleSend}
-        onStop={handleStop}
-        placeholder={'Ask anything to start the conversation.'}
-      />
+        <div className='z-1 w-full shrink-0 bg-background'>
+          <div className='mx-auto flex w-full max-w-3xl px-2 py-3'>
+            <PromptInput
+              status={status}
+              onSend={handleSend}
+              onStop={handleStop}
+              placeholder={'Ask anything to start the conversation.'}
+            />
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
