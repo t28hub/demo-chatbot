@@ -12,10 +12,10 @@
   },
   "iconLibrary": "lucide",
   "aliases": {
-    "components": "@/components",
+    "components": "@demo-chatbot/ui/components",
     "ui": "@demo-chatbot/ui/components/ui",
     "utils": "@demo-chatbot/ui/lib/utils",
-    "lib": "@/lib",
-    "hooks": "@/hooks"
+    "lib": "@demo-chatbot/ui/lib",
+    "hooks": "@demo-chatbot/ui/hooks"
   }
 }
