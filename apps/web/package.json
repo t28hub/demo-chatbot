@@ -16,13 +16,17 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@ai-sdk/openai-compatible": "catalog:",
+    "@ai-sdk/react": "catalog:",
     "@base-ui/react": "catalog:",
     "@demo-chatbot/ui": "workspace:*",
+    "ai": "catalog:",
     "lucide-react": "catalog:",
     "next": "16.2.6",
     "react": "catalog:",
     "react-dom": "catalog:",
-    "tailwindcss": "catalog:"
+    "tailwindcss": "catalog:",
+    "zod": "catalog:"
   },
   "devDependencies": {
     "@demo-chatbot/tsconfig": "workspace:*",
