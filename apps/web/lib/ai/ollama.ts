@@ -1,9 +1,11 @@
 import { createOpenAICompatible } from '@ai-sdk/openai-compatible';
 
+import { env } from '@/lib/env';
+
 const ollama = createOpenAICompatible({
   name: 'ollama',
-  baseURL: process.env['OLLAMA_BASE_URL'] ?? 'http://localhost:11434/v1',
+  baseURL: env.OLLAMA_BASE_URL,
   apiKey: 'ollama',
 });
 
-export const chatModel = ollama(process.env['OLLAMA_MODEL'] ?? 'llama3.2');
+export const chatModel = ollama(env.OLLAMA_MODEL);
