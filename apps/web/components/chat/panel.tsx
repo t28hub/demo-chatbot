@@ -1,14 +1,24 @@
 'use client';
 
 import { useChat } from '@ai-sdk/react';
-import { uuid } from '@demo-chatbot/core';
+import { type UUID, uuid } from '@demo-chatbot/core';
 import { DefaultChatTransport } from 'ai';
 
 import { MessageList } from '@/components/chat/message-list';
 import { PromptInput } from '@/components/chat/prompt-input';
 
-export default function HomePage() {
+export interface PanelProps {
+  /**
+   * Identifies the conversation. Omitted for a fresh chat, in which case useChat
+   * generates one.
+   */
+  readonly id?: UUID;
+}
+
+function Panel({ id }: PanelProps) {
   const { messages, sendMessage, status, stop } = useChat({
+    // exactOptionalPropertyTypes forbids passing `id: undefined`, so omit it when absent.
+    ...(id === undefined ? {} : { id }),
     transport: new DefaultChatTransport({ api: '/api/chat' }),
     generateId: uuid,
   });
@@ -34,3 +44,5 @@ export default function HomePage() {
     </main>
   );
 }
+
+export { Panel };
