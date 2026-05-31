@@ -1,0 +1,26 @@
+{
+  "name": "@demo-chatbot/core",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Shared framework-agnostic primitives for the demo chatbot monorepo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t28hub/demo-chatbot.git",
+    "directory": "packages/core"
+  },
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@demo-chatbot/tsconfig": "workspace:*",
+    "typescript": "catalog:"
+  }
+}

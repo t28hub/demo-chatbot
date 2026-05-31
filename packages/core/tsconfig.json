@@ -1,0 +1,8 @@
+{
+  "extends": "@demo-chatbot/tsconfig/base",
+  "compilerOptions": {
+    "lib": ["DOM", "ESNext"]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
