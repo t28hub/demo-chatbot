@@ -21,6 +21,7 @@
     "@ai-sdk/openai-compatible": "catalog:",
     "@ai-sdk/react": "catalog:",
     "@base-ui/react": "catalog:",
+    "@demo-chatbot/core": "workspace:*",
     "@demo-chatbot/ui": "workspace:*",
     "ai": "catalog:",
     "lucide-react": "catalog:",

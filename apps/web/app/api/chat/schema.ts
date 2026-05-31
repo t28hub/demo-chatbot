@@ -1,3 +1,4 @@
+import type { UUID } from '@demo-chatbot/core';
 import { z } from 'zod';
 
 const textPartSchema = z.object({
@@ -8,7 +9,7 @@ const textPartSchema = z.object({
 const messagePartSchema = z.union([textPartSchema]);
 
 const userMessageSchema = z.object({
-  id: z.string(),
+  id: z.uuid().transform((value) => value as UUID),
   role: z.enum(['user']),
   parts: z.array(messagePartSchema).min(1),
 });

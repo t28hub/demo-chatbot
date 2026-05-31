@@ -1,6 +1,7 @@
 'use client';
 
 import { useChat } from '@ai-sdk/react';
+import { uuid } from '@demo-chatbot/core';
 import { DefaultChatTransport } from 'ai';
 
 import { MessageList } from '@/components/chat/message-list';
@@ -9,6 +10,7 @@ import { PromptInput } from '@/components/chat/prompt-input';
 export default function HomePage() {
   const { messages, sendMessage, status, stop } = useChat({
     transport: new DefaultChatTransport({ api: '/api/chat' }),
+    generateId: uuid,
   });
 
   return (
