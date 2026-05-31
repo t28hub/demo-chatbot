@@ -205,6 +205,9 @@ settings:
 
 catalogs:
   default:
+    '@ai-sdk/devtools':
+      specifier: 0.0.18
+      version: 0.0.18
     '@ai-sdk/openai-compatible':
       specifier: 2.0.48
       version: 2.0.48
@@ -279,6 +282,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@ai-sdk/devtools':
+        specifier: 'catalog:'
+        version: 0.0.18
       '@ai-sdk/openai-compatible':
         specifier: 'catalog:'
         version: 2.0.48(zod@4.4.3)
@@ -388,6 +394,11 @@ importers:
         version: 6.0.3
 
 packages:
+
+  '@ai-sdk/devtools@0.0.18':
+    resolution: {integrity: sha512-0J25Q7occrkMJM1MrP0KeR8XNdGGKNgzxhOLfxBe/qZBQP6yXgV4H5Gf2DnDC3UgXDBJBskH9nh23doCo2Pebw==}
+    engines: {node: '>=18'}
+    hasBin: true
 
   '@ai-sdk/gateway@3.0.120':
     resolution: {integrity: sha512-MYKAeD2q7/sa1ZdqtL2tw0Me0B8Tok6Q/fhkJDhJl39dG8u+VBlWO9yk9lcdm784bM418o1EKObo4aOxs6+18Q==}
@@ -2720,6 +2731,12 @@ packages:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
+
+  '@ai-sdk/devtools@0.0.18':
+    dependencies:
+      '@ai-sdk/provider': 3.0.10
+      '@hono/node-server': 1.19.14(hono@4.12.23)
+      hono: 4.12.23
 
   '@ai-sdk/gateway@3.0.120(zod@4.4.3)':
     dependencies:
