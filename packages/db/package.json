@@ -1,0 +1,33 @@
+{
+  "name": "@demo-chatbot/db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "description": "Persistence layer for the demo chatbot monorepo using PGlite and Drizzle ORM",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t28hub/demo-chatbot.git",
+    "directory": "packages/db"
+  },
+  "files": [
+    "src"
+  ],
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@demo-chatbot/core": "workspace:*",
+    "@electric-sql/pglite": "catalog:",
+    "drizzle-orm": "catalog:"
+  },
+  "devDependencies": {
+    "@demo-chatbot/tsconfig": "workspace:*",
+    "drizzle-kit": "catalog:",
+    "typescript": "catalog:"
+  }
+}

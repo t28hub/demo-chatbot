@@ -7,6 +7,7 @@ saveExact: true
 minimumReleaseAge: 4320 # 3 days in minutes
 
 allowBuilds:
+  esbuild: true
   lefthook: true
   msw: false
   sharp: true
@@ -16,11 +17,14 @@ catalog:
   '@ai-sdk/openai-compatible': 2.0.48
   '@ai-sdk/react': 3.0.193
   '@base-ui/react': 1.5.0
+  '@electric-sql/pglite': 0.4.6
   '@tailwindcss/postcss': 4.3.0
   '@types/node': 25.9.0
   '@types/react': 19.2.15
   '@types/react-dom': 19.2.3
   ai: 6.0.191
+  drizzle-kit: 0.31.10
+  drizzle-orm: 0.45.2
   lucide-react: 1.16.0
   next-themes: 0.4.6
   react: 19.2.6
